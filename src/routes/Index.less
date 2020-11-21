@@ -1,0 +1,78 @@
+.index {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 64px);
+  background-image: url("../assets/Cover01.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 64px);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #fff;
+    width: 100%;
+    height: calc(100vh - 64px);
+
+    .center-content {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+      align-self: center;
+      .inner {
+        height: calc(100vh - 64px);
+        padding: 0 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        .title {
+          font-size: 64px;
+          font-weight: bold;
+        }
+
+        .descript {
+          padding: 0px 24px;
+        }
+
+        .btn {
+          font-family: "Raleway", sans-serif;
+          text-transform: uppercase;
+          color: #fff;
+          background-color: #5ca9fb;
+          background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+          padding: 14px 34px;
+          letter-spacing: 1px;
+          margin: 0;
+          font-size: 15px;
+          font-weight: 500;
+          border-radius: 25px;
+          transition: all 0.5s linear;
+          border: 0;
+          width: 150px;
+          margin: auto;
+          cursor: pointer;
+        }
+
+        .btn:hover {
+          color: #fff;
+          background-image: none;
+          background-color: #6372ff;
+        }
+      }
+    }
+  }
+}
