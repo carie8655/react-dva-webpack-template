@@ -1,5 +1,8 @@
 {
+  "name": "react-dva-webpack-template",
+  "version": "0.0.0",
   "private": true,
+  "author": "Carie <carie8655@gmail.com>",
   "scripts": {
     "start": "cross-env webpack-dev-server --progress --colors",
     "build": "webpack --mode production",

@@ -5,10 +5,6 @@ import PropTypes from "prop-types";
 
 import AppSwitch from "./routes/AppSwitch";
 import Index from "./routes/Index";
-import About from './routes/About'
-import ArticleList from './routes/Article/List';
-import ArticleDetail from './routes/Article/Detail';
-import ArticleTypeList from './routes/ArticleType/List';
 
 const { ConnectedRouter } = routerRedux;
 
@@ -32,10 +28,6 @@ export default (props) => {
         <Switch>
           <AppSwitch>
             <Route path="/" exact component={Index} />
-            <Route path="/about" exact component={About} />
-            <Route path="/article/list/:type" exact component={ArticleList} />
-            <Route path="/article/:id" exact component={ArticleDetail} />
-            <Route path="/article/type/list/" exact component={ArticleTypeList} />
           </AppSwitch>
         </Switch>
       </RouterRoot>

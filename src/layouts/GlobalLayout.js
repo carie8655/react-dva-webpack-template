@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "dva";
-import { Layout, Menu } from "antd";
+import { Layout, Menu, Breadcrumb  } from "antd";
 import { enquireScreen } from "enquire-js";
 import "./GlobalLayout.less";
 
